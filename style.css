@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+  background-color: #F7F9FC;
+  background-image: url('images/background2.jpg');
+  background-size: cover;
+}
+
+h1 {
+  font-family: 'Mali';
+  color: #440a67;
+}
+
+h2 {
+  font-family: 'Varela Round';
+  color: #fdb827;
+}
+
+h3 {
+  font-family: 'Varela Round';
+  color: #440a67;
+}
+
+p {
+  font-family: 'Varela Round';
+}
+
+a {
+  font-family: 'Varela Round';
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  background-color: #ffbe0f;
+}
+
+li {
+  font-family: 'Varela Round';
+  font-size: 17px;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.card-white {
+  padding: 30px;
+  border-radius: 4px;
+  margin: 20px 0px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+  text-align: center;
+  background: white;
+  background: linear-gradient(to right bottom,
+    rgba(255,255,255,0.8),
+    rgba(255,255,255,0.3)
+    );
+  border-radius: 20px;
+  z-index: 3;
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.button-orange {
+  background-color: #b4aee8;
+  padding: 10px 25px;
+  text-align: center;
+  font-family: 'Varela Round';
+  border-radius: 5px;
+}
+
+#icon-bigger {
+  font-size: 30px;
+}
+
+.circle1, .circle2 {
+  background: white;
+  background: linear-gradient(to right bottom,
+    rgba(255,255,255,0.8),
+    rgba(255,255,255,0.3)
+    );
+  height: 12rem;
+  width: 12rem;
+  position: absolute;
+  z-index: 1;
+}
+
+.circle1 {
+  top: 2%;
+  right: 17%;
+  border-radius: 50%;
+}
+
+.circle2 {
+  bottom: 11%;
+  left: 17%;
+  border-radius: 50%;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+  .circle1 {
+    height: 12rem;
+    width: 12rem;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+  .circle1 {
+    height: 9rem;
+    width: 9rem;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+  .circle1 {
+    height: 6rem;
+    width: 6rem;
+  }
+}
