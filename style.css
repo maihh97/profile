@@ -7,8 +7,8 @@ body {
   background-size: cover;
 }
 
-h1 {
-  font-family: 'Mali';
+h1, .secheader-color {
+  font-family: 'Varela Round';
   color: #440a67;
 }
 
@@ -32,7 +32,7 @@ a {
   color: black;
 }
 
-a:hover {
+.button-orange:hover {
   background-color: #ffbe0f;
 }
 
@@ -86,30 +86,34 @@ li {
 
 #icon-bigger {
   font-size: 30px;
+  transition: font-size 1s;
 }
 
-.circle1, .circle2 {
-  background: white;
-  background: linear-gradient(to right bottom,
-    rgba(255,255,255,0.8),
-    rgba(255,255,255,0.3)
-    );
-  height: 12rem;
-  width: 12rem;
-  position: absolute;
-  z-index: 1;
+#icon-bigger:hover {
+  font-size: 50px;
 }
 
-.circle1 {
-  top: 2%;
-  right: 17%;
-  border-radius: 50%;
+.project-card {
+  background-color: white;
 }
 
-.circle2 {
-  bottom: 11%;
-  left: 17%;
-  border-radius: 50%;
+.img-resize:hover {
+  height: 120px;
+  transition: 1s;
+}
+
+.project-link {
+  font-style: italic;
+}
+
+.project-link:hover {
+  color: #ffbe0f;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 15px;
+  width: 100%;
 }
 
 @media (max-width: 960px) {
@@ -117,28 +121,16 @@ li {
   .container {
     width: 700px;
   }
-  .circle1 {
-    height: 12rem;
-    width: 12rem;
-  }
 }
 @media (max-width: 720px) {
   /* For a screen < 720px, this CSS will be read */
   .container {
     width: 500px;
   }
-  .circle1 {
-    height: 9rem;
-    width: 9rem;
-  }
 }
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
   .container {
     width: 300px;
-  }
-  .circle1 {
-    height: 6rem;
-    width: 6rem;
   }
 }
