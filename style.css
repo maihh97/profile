@@ -24,6 +24,7 @@ h3 {
 
 p {
   font-family: 'Varela Round';
+  font-size: 18px;
 }
 
 a {
@@ -108,6 +109,10 @@ li {
 
 .project-link:hover {
   color: #ffbe0f;
+}
+
+.p-italic {
+  font-style: italic;
 }
 
 table {
